@@ -20,8 +20,12 @@ source <(fzf --zsh)
 
 # Tmux autostart
 if [ -x "$(command -v tmux)" ] && [ -z "${TMUX}" ]; then
-    exec tmux
-fi 
+    if tmux has-session -t default 2>/dev/null; then
+        exec tmux attach -t default
+    else
+        exec tmux new -s default
+    fi
+fi
 
 # Cross-distro bat command and preview function
 if command -v batcat &> /dev/null; then
