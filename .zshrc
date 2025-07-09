@@ -56,3 +56,6 @@ alias htb_au='sudo openvpn "$PATH_HTB_AU"'
 alias fzf="fzf --preview \"$BAT_PREVIEW {}\" --preview-window=right,65%"
 alias fvim="nvim \$(fzf --preview \"$BAT_PREVIEW {}\" --preview-window=right,65%)"
 alias clear='printf "\\033_Ga=d\\033\\\\"; clear'
+
+# Other important aliases
+alias emby="sudo systemctl start emby-server.service"
