@@ -10,9 +10,9 @@
 </p>
 
 A GTK theme based on the colours of [Sainnhe's](https://github.com/sainnhe) great theme: [Gruvbox Material for Neovim](https://github.com/sainnhe/gruvbox-material) <br>
-the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme), and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
+the [VinceLiuice's](https://github.com/vinceliuice) Awesome GTK Themes and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
 
-![Gruvbox Dark](https://raw.githubusercontent.com/Fausto-Korpsvart/Gruvbox-GTK-Theme/master/extra/screenshoots/Gruvbox-2.png)
+![Gruvbox](https://raw.githubusercontent.com/Fausto-Korpsvart/Gruvbox-GTK-Theme/master/extra/screenshoots/Gruvbox.png)
 
 > [!NOTE]
 > The theme is more focused on the Gnome Desktop, but supports Cinnamon, XFCE, Mate, etc. with generic styles.
@@ -59,7 +59,7 @@ sudo apt install gtk2-engines-murrine
 
 ## 🔨 Applying the Theme
 
-- For **GTK3**, apply themes from **Gnome Tweaks** or **Refine**
+- For **GTK3**, apply themes from **Gnome Tweaks**, **Refine** or **Tuner**
 - For GTK4 applications it is only necessary to have moved the `assets`, `gtk.css` and `gtk-dark.css` files to the `~/.config/gtk-4.0` path,
   and if you notice that the theme has not been applied, just close and reopen the application.
 
@@ -100,10 +100,16 @@ Run the following command in the terminal for a general installation
 ./install.sh
 ```
 
-The `./install.sh` allows some specific options like:
+> The `./install.sh` allows some specific options like:
 
 ```sh
-./install.sh --tweaks medium mac outline float -t green -l
+./install.sh --tweaks medium macos outline float -t green -l
+```
+
+> To customise the name of the theme, you can use the `-n` parameter, e.g.
+
+```sh
+./install.sh -n "Gruvbox-Float-Border" --tweaks outline float
 ```
 
 > [!TIP]
@@ -113,14 +119,19 @@ The `./install.sh` allows some specific options like:
 
 ```
 -d, --dest DIR          Specify destination directory (Default: ~/.themes)
+
 -n, --name NAME         Specify theme name (Default: Gruvbox)
--t, --theme VARIANT...  Specify theme accent color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+
+-t, --theme VARIANT...  Specify theme accent color variant(s) [default|green|grey|orange|pink|purple|red|teal|yellow|all] (Default: blue)
+
 -c, --color VARIANT...  Specify color variant(s) [light|dark] (Default: All variants)
+
 -s, --size VARIANT...   Specify size variant [standard|compact] (Default: standard variant)
 
 -l, --libadwaita        Link installed gtk-4.0 theme to config folder for all libadwaita app use this theme
 
 -r, --remove,
+
 -u, --uninstall         Uninstall/Remove installed themes or links
 
 --tweaks                Specify versions for tweaks

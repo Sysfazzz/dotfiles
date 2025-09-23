@@ -59,3 +59,7 @@ alias clear='printf "\\033_Ga=d\\033\\\\"; clear'
 
 # Other important aliases
 alias emby="sudo systemctl start emby-server.service"
+
+# IPTables
+alias lockhost="sudo iptables -A INPUT -i virbr1 -s 10.0.0.0/24 -j DROP"
+alias unlockhost="sudo iptables -D INPUT -i virbr1 -s 10.0.0.0/24 -j DROP"
