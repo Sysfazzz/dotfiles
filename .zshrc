@@ -62,4 +62,4 @@ alias emby="sudo systemctl start emby-server.service"
 
 # IPTables
 alias lockhost="sudo iptables -A INPUT -i virbr1 -s 10.0.0.0/24 -j DROP"
-alias unlockhost="sudo iptables -D INPUT -i virbr1 -s 10.0.0.0/24 -j DROP"
+alias unlockhost="sudo iptables -D INPUT -i virbr0 -s 192.168.122.0/24 -j DROP"
