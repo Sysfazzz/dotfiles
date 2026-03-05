@@ -1,0 +1,69 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "dmenu";
+    font: "JetBrainsMono Nerd Font 14";
+    show-icons: true;
+}
+
+* {
+    background-color: transparent;
+    text-color: @on-background;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 1000px;
+    background-color: @background; 
+    border: 2px solid;
+    border-color: @primary;
+    border-radius: 0px;
+}
+
+mainbox {
+    padding: 10px;
+    spacing: 0px;
+    children: [ listview ];
+}
+
+listview {
+    lines: 3;
+    columns: 3;
+    scrollbar: false;
+    spacing: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+element {
+    orientation: vertical;
+    padding: 5px;
+    border-radius: 0px;
+    spacing: 5px;
+    children: [ element-icon, element-text ]; 
+}
+
+element selected.normal {
+    background-color: @secondary;
+    text-color: @background;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @on-background;
+}
+
+element-icon {
+    size: 150px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    text-color: inherit;
+}

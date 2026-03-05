@@ -1,0 +1,118 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: @background;
+}
+
+tooltip {
+    background-color: @surface_container_highest;
+    color: @on_surface_container_highest;
+    border: 2px solid @outline;
+    border-radius: 8px;
+}
+
+#workspaces {
+    margin: 0 30px 0 0;
+}
+
+#workspaces button {
+    color: @on_background;
+    padding: 0 5px;
+    margin: 0 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: @primary;
+    color: @on_primary;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    background-color: @secondary;
+    color: @on_secondary;
+    font-weight: bold;
+}
+
+#workspaces button.urget {
+    background-color: @error;
+    color: @on_error;
+}
+
+#timendate,
+#mpris,
+#tray,
+#network.htb,
+#power-profiles-daemon,
+#hardware,
+#custom-power {
+    color: @primary;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+#clock.date {
+    color: @secondary;
+}
+
+#mpris {
+    color: @tertiary;
+}
+
+#mpris.paused {
+    color: @error;
+}
+
+#tray {
+    color: @on_background;
+    margin: 0 0 0 20px;
+}
+
+#network.htb {
+    color: @tertiary;
+    margin: 0 20px 0 0;
+}
+
+#network.htb.disconnected {
+    color: @error;
+}
+
+#power-profiles-daemon {
+    color: @secondary;
+    margin: 0 20px 0 0;
+}
+
+#pulseaudio {
+    margin: 0 20px 0 0;
+}
+
+#bluetooth {
+   margin: 0 20px 0 0;
+}
+
+#networks {
+    margin: 0 20px 0 0;
+}
+
+#charge {
+    margin: 0 10px 0 0;
+}
+
+#custom-power {
+    background-color: @error;
+    color: @background;
+    padding: 0 5px;
+}

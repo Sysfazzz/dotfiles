@@ -1,0 +1,207 @@
+{
+    "position": "top",
+    "height": 30,
+    "margin-top": 0,
+    "margin-right": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "modules-left": [
+        "hyprland/workspaces",
+        "mpris"
+    ],
+    "modules-center": [
+        "group/timendate",
+        "tray"
+    ],
+    "modules-right": [
+        "network#htb",
+        "power-profiles-daemon",
+        "group/hardware",
+        "custom/power"
+    ],
+    // -------- MODULES --------
+    // -------- custom separator --------
+    "custom/seperator": {
+        "format": " "
+    },
+    // -------- date and time --------
+    "group/timendate": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": true,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "clock",
+            "custom/seperator",
+            "clock#date"
+        ]
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip": false
+    },
+    "clock#date": {
+        "format": "{:%a %b %d}",
+        "tooltip": false
+    },
+    // -------- media player --------
+    "mpris": {
+        "format": "{player_icon} {title} 󰎇 {artist}",
+        "format-paused": "{status_icon} {title} 󰎇 {artist}",
+        "title-len": 35,
+        "artist-len": 20,
+        "player-icons": {
+            "default": "▶"
+        },
+        "status-icons": {
+            "paused": "⏸"
+        },
+        "ignored-players": [],
+        "tooltip": false,
+        "max-length": 60
+    },
+    // -------- workspaces --------
+    "hyprland/workspaces": {
+        "format": "{name}"
+    },
+    // -------- tray --------
+    "tray": {
+        "icon-size": 20,
+        "spacing": 15,
+        "tooltip": false
+    },
+    // -------- hack the box --------
+    "network#htb": {
+        "interface": "tun0",
+        "format": "󰆧 HTB Connected",
+        "format-disconnected": "󰆧 HTB Disconnected",
+        "tooltip": false
+    },
+    // -------- power profile --------
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "󰾅",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        },
+        "tooltip": false
+    },
+    // -------- all hardwares --------
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "bluetooth",
+            "group/networks",
+            "group/charge"
+        ]
+    },
+    // -------- audio --------
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "󰋋",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 10,
+        "on-click": "~/.config/hypr/scripts/audio.sh",
+        "on-click-right": "pavucontrol",
+        "tooltip": false
+    },
+    // -------- bluetooth --------
+    "bluetooth": {
+        "format": "󰂯",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱 {num_connections}",
+        "tooltip": false
+    },
+    // -------- network --------
+    "group/networks": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "network",
+            "network#ssid",
+            "custom/seperator"
+        ]
+    },
+    "network": {
+        "interface": "wlan0",
+        "format-wifi": "{icon}",
+        "format-disconnected": "󰤭",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
+        "on-click": "~/.config/hypr/scripts/wifi.sh",
+        "on-click-right": "nm-connection-editor",
+        "tooltip": false
+    },
+    "network#ssid": {
+        "interface": "wlan0",
+        "format-wifi": "{essid}",
+        "format-ethernet": "Ethernet",
+        "format-disconnected": "Disconnected",
+        "tooltip": false
+    },
+    // -------- battery --------
+    "group/charge": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "battery",
+            "battery#show",
+            "custom/seperator"
+        ]
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "tooltip": false
+    },
+    "battery#show": {
+        "format": "{capacity}%",
+        "tooltip": false
+    },
+    // -------- battery --------
+    "custom/power": {
+    "format": "",
+    "on-click": "~/.config/hypr/scripts/power.sh",
+    "tooltip": false
+}
+}

@@ -1,0 +1,78 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "dmenu";
+    font: "JetBrainsMono Nerd Font 14";
+}
+
+* {
+    background-color: transparent;
+    text-color: @on-background;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 700px; 
+    background-color: @background; 
+    border: 2px solid;
+    border-color: @primary;
+    border-radius: 0px;
+}
+
+mainbox {
+    padding: 0px;
+    spacing: 5px;
+}
+
+inputbar {
+    background-color: @background;
+    padding: 10px;
+    spacing: 5px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @on-background;
+    vertical-align: 0.5;
+}
+
+entry {
+    placeholder: "";
+    text-color: @on-background;
+    vertical-align: 0.5;
+}
+
+listview {
+    lines: 5;
+    columns: 1;
+    scrollbar: false;
+    spacing: 0px;
+    padding: 0px 5px 5px 5px;
+    border: 0px;
+}
+
+element {
+    padding: 10px;
+    border-radius: 0px;
+    spacing: 5px;
+    orientation: horizontal;
+    children: [ element-text ];
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color: @background;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @on-background;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+}

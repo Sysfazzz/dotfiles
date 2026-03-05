@@ -1,0 +1,86 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font 14";
+    display-drun: "Applications:";
+}
+
+* {
+    background-color: transparent;
+    text-color: @on-background;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 700px; 
+    background-color: @background; 
+    border: 2px solid;
+    border-color: @primary;
+    border-radius: 0px;
+}
+
+mainbox {
+    padding: 0px;
+    spacing: 5px;
+}
+
+inputbar {
+    background-color: @background;
+    padding: 10px;
+    spacing: 5px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @on-background;
+    vertical-align: 0.5;
+}
+
+entry {
+    placeholder: "";
+    text-color: @on-background;
+    vertical-align: 0.5;
+}
+
+listview {
+    lines: 5;
+    columns: 1;
+    scrollbar: false;
+    spacing: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+element {
+    padding: 10px;
+    border-radius: 0px;
+    spacing: 5px;
+    orientation: horizontal;
+}
+
+element selected.normal {
+    background-color: @secondary;
+    text-color: @on-secondary;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @on-background;
+}
+
+element-icon {
+    size: 1.2em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+}

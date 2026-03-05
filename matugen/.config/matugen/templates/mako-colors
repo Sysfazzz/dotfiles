@@ -1,0 +1,17 @@
+font=JetBrainsMono Nerd Font Propo 12
+width=400
+height=200
+margin=10
+padding=10
+border-size=2
+
+format=<b>%s</b>\n%b
+default-timeout=10000
+ignore-timeout=0
+
+background-color={{colors.background.default.hex}}
+text-color={{colors.primary.default.hex}}
+border-color={{colors.primary.default.hex}}
+
+[grouped]
+format=<b>%s</b>\n%b\n<i>(%g unread)</i>
