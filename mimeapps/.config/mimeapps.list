@@ -1,0 +1,46 @@
+[Default Applications]
+
+# --- Text & Code ---
+text/plain=vscodium.desktop
+text/markdown=vscodium.desktop
+text/css=vscodium.desktop
+application/json=vscodium.desktop
+application/javascript=vscodium.desktop
+text/x-shellscript=vscodium.desktop
+
+# --- Images ---
+image/jpeg=imv.desktop
+image/jpg=imv.desktop
+image/png=imv.desktop
+image/gif=imv.desktop
+image/webp=imv.desktop
+image/svg+xml=imv.desktop
+image/bmp=imv.desktop
+
+# --- Video ---
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/webm=mpv.desktop
+video/quicktime=mpv.desktop
+video/x-msvideo=mpv.desktop
+video/x-flv=mpv.desktop
+
+# --- Audio ---
+audio/mpeg=mpv.desktop
+audio/x-wav=mpv.desktop
+audio/ogg=mpv.desktop
+audio/flac=mpv.desktop
+audio/mp4=mpv.desktop
+
+# --- Web & Links ---
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+
+# --- Directories / File Manager ---
+inode/directory=thunar.desktop
+
+# --- Documents ---
+application/pdf=firefox.desktop
