@@ -22,5 +22,6 @@
     "workbench.activityBar.location": "hidden",
     "editor.fontLigatures": true,
     "window.menuBarVisibility": "toggle",
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "workbench.startupEditor": "none"
 }

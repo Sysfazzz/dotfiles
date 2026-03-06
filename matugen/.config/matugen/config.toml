@@ -36,6 +36,10 @@ post_hook = 'pkill -USR1 cava'
 input_path = '~/.config/matugen/templates/yazi-theme.toml'
 output_path = '~/.config/yazi/theme.toml'
 
+[templates.obsidian]
+input_path = '~/.config/matugen/templates/obsidian-colors.css'
+output_path = '~/obsidian/The Brain/.obsidian/snippets/matugen.css'
+
 [templates.pywalfox]
 input_path = '~/.config/matugen/templates/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'

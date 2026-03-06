@@ -10,8 +10,8 @@ default-timeout=10000
 ignore-timeout=0
 
 background-color=#121318
-text-color=#aec6ff
-border-color=#aec6ff
+text-color=#b7c4ff
+border-color=#b7c4ff
 
 [grouped]
 format=<b>%s</b>\n%b\n<i>(%g unread)</i>

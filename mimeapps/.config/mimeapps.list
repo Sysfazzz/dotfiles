@@ -44,3 +44,4 @@ inode/directory=thunar.desktop
 
 # --- Documents ---
 application/pdf=firefox.desktop
+x-scheme-handler/ror2mm=r2modman.desktop
