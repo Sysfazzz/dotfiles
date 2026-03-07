@@ -22,5 +22,6 @@
     "editor.fontSize": 16,
     "workbench.startupEditor": "none",
     "window.customTitleBarVisibility": "never",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Dracula Theme"
 }
