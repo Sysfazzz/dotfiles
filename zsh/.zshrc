@@ -21,4 +21,3 @@ alias vcupdate='sh -c "$(curl -sS https://vencord.dev/install.sh)"'
 
 alias wallset="~/.config/hypr/scripts/wallset.sh"
 alias clock='tty-clock -c -C 4 -r -s -t -f "%A, %B %d"'
-alias code="codium"

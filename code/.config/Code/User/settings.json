@@ -1,13 +1,11 @@
 {
     "workbench.productIconTheme": "material-product-icons",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Experimental Dark",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.minimap.enabled": false,
     "workbench.statusBar.visible": false,
     "breadcrumbs.enabled": false,
     "window.titleBarStyle": "native",
-    "window.customTitleBarVisibility": "never",
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
     "editor.fontFamily": "'JetBrainsMono Nerd Font Propo'",
@@ -21,7 +19,8 @@
     "editor.cursorStyle": "block",
     "workbench.activityBar.location": "hidden",
     "editor.fontLigatures": true,
-    "window.menuBarVisibility": "toggle",
     "editor.fontSize": 16,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "window.customTitleBarVisibility": "never",
+    "window.menuBarVisibility": "toggle"
 }
