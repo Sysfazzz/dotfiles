@@ -23,5 +23,6 @@
     "workbench.startupEditor": "none",
     "window.customTitleBarVisibility": "never",
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Dracula Theme"
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
