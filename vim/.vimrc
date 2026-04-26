@@ -2,7 +2,6 @@ syntax on
 set number
 set relativenumber
 set mouse=a
-set cursorline
 set hlsearch
 set ignorecase
 set smartcase

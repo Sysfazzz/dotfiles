@@ -17,12 +17,19 @@
     "terminal.integrated.smoothScrolling": true,
     "editor.cursorBlinking": "smooth",
     "editor.cursorStyle": "block",
-    "workbench.activityBar.location": "hidden",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "workbench.startupEditor": "none",
-    "window.customTitleBarVisibility": "never",
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Dracula Theme",
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "code-runner.clearPreviousOutput": true,
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": true,
+    "editor.lineNumbers": "relative",
+    "workbench.navigationControl.enabled": false,
+    "chat.agentsControl.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never"
 }

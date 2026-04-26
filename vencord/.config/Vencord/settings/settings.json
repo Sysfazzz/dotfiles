@@ -296,9 +296,6 @@
         "MessageLogger": {
             "enabled": false
         },
-        "MessageTags": {
-            "enabled": false
-        },
         "MoreQuickReactions": {
             "enabled": false
         },
@@ -386,7 +383,10 @@
         "PinDMs": {
             "enabled": true,
             "userBasedCategoryList": {
-                "1099474100637941761": []
+                "1099474100637941761": [],
+                "1239623790162481154": [],
+                "852913393677500427": [],
+                "1495493751139733747": []
             },
             "canCollapseDmSection": false,
             "pinOrder": 0
@@ -602,6 +602,12 @@
         },
         "SupportHelper": {
             "enabled": true
+        },
+        "CustomCommands": {
+            "enabled": false
+        },
+        "CharacterCounter": {
+            "enabled": false
         }
     },
     "uiElements": {
@@ -618,6 +624,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1772463460544
+        "settingsSyncVersion": 1776631779733
     }
 }
