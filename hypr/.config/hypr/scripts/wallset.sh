@@ -16,7 +16,6 @@ echo "Applying wallpaper and generating colors..."
 
 hyprctl hyprpaper preload "$WALLPAPER"
 hyprctl hyprpaper wallpaper ",$WALLPAPER"
-hyprctl hyprpaper unload all
 
 matugen image "$WALLPAPER" -t scheme-tonal-spot --source-color-index 0
 
