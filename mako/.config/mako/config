@@ -9,9 +9,9 @@ format=<b>%s</b>\n%b
 default-timeout=10000
 ignore-timeout=0
 
-background-color=#14140c
-text-color=#cccb76
-border-color=#cccb76
+background-color=#111318
+text-color=#adc6ff
+border-color=#adc6ff
 
 [grouped]
 format=<b>%s</b>\n%b\n<i>(%g unread)</i>

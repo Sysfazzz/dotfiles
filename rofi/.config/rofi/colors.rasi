@@ -1,12 +1,12 @@
 * {
-    background: #14140c;
-    on-background: #e6e3d5;
-    primary: #cccb76;
-    on-primary: #323200;
-    secondary: #cac8a4;
-    on-secondary: #323218;
-    tertiary: #a4d0bc;
-    on-tertiary: #0b372a;
+    background: #111318;
+    on-background: #e2e2e9;
+    primary: #adc6ff;
+    on-primary: #102f60;
+    secondary: #bfc6dc;
+    on-secondary: #293041;
+    tertiary: #debcdf;
+    on-tertiary: #402843;
     error: #ffb4ab;
     on-error: #690005;
 }

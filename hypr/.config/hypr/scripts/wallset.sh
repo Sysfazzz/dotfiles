@@ -14,8 +14,11 @@ fi
 
 echo "Applying wallpaper and generating colors..."
 
-hyprctl hyprpaper preload "$WALLPAPER"
-hyprctl hyprpaper wallpaper ",$WALLPAPER"
+awww img "$WALLPAPER" \
+    --transition-type random \
+    --transition-duration 2 \
+    --transition-fps 60 \
+    --transition-bezier 0.65,0,0.35,1
 
 matugen image "$WALLPAPER" -t scheme-tonal-spot --source-color-index 0
 
