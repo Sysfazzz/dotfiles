@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALL_DIR="$HOME/dotfiles/wallpapers"
+WALL_DIR="$HOME/Pictures/Wallpapers/"
 
 menu_items=""
 while read -r file; do
