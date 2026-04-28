@@ -15,7 +15,7 @@ configuration {
 }
 
 window {
-    width: 1000px;
+    width: 900px;
     background-color: @background; 
     border: 2px solid;
     border-color: @primary;
@@ -23,8 +23,8 @@ window {
 }
 
 mainbox {
-    padding: 10px;
-    spacing: 0px;
+    padding: 5px;
+    spacing: 5px;
     children: [ inputbar, listview ];
 }
 
@@ -47,7 +47,7 @@ entry {
 }
 
 listview {
-    lines: 3;
+    lines: 2;
     columns: 3;
     scrollbar: false;
     spacing: 0px;
@@ -75,7 +75,7 @@ element alternate.normal {
 }
 
 element-icon {
-    size: 150px;
+    size: 200px;
     horizontal-align: 0.5;
     vertical-align: 0.5;
 }
