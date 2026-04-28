@@ -7,9 +7,9 @@ while read -r file; do
     filename=$(basename "$file")
     
     menu_items+="${filename}\0icon\x1f${file}\n"
-done < <(find "$WALL_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \))
+done < <(find "$WALL_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" \))
 
-chosen=$(echo -en "$menu_items" | rofi -dmenu -i -show-icons -theme ~/.config/rofi/wallpaper.rasi)
+chosen=$(echo -en "$menu_items" | rofi -dmenu -i -p "Search Wallpaper:" -show-icons -theme ~/.config/rofi/wallpaper.rasi)
 
 if [ -z "$chosen" ]; then
     exit
