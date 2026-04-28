@@ -25,7 +25,25 @@ window {
 mainbox {
     padding: 10px;
     spacing: 0px;
-    children: [ listview ];
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: @background;
+    padding: 10px;
+    spacing: 5px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @on-background;
+    vertical-align: 0.5;
+}
+
+entry {
+    placeholder: "";
+    text-color: @on-background;
+    vertical-align: 0.5;
 }
 
 listview {
