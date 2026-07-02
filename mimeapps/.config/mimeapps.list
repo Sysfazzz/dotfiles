@@ -1,0 +1,49 @@
+[Default Applications]
+
+# --- Text & Code ---
+text/plain=sublime_text.desktop
+text/markdown=sublime_text.desktop
+text/css=sublime_text.desktop
+application/json=sublime_text.desktop
+application/javascript=sublime_text.desktop
+text/x-shellscript=sublime_text.desktop
+
+# --- Images ---
+image/jpeg=imv.desktop
+image/jpg=imv.desktop
+image/png=imv.desktop
+image/gif=imv.desktop
+image/webp=imv.desktop
+image/svg+xml=imv.desktop
+image/bmp=imv.desktop
+
+# --- Video ---
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/webm=mpv.desktop
+video/quicktime=mpv.desktop
+video/x-msvideo=mpv.desktop
+video/x-flv=mpv.desktop
+
+# --- Audio ---
+audio/mpeg=mpv.desktop
+audio/x-wav=mpv.desktop
+audio/ogg=mpv.desktop
+audio/flac=mpv.desktop
+audio/mp4=mpv.desktop
+
+# --- Web & Links ---
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+
+# --- Directories / File Manager ---
+inode/directory=nemo.desktop
+
+# --- Documents ---
+application/pdf=org.pwmt.zathura.desktop
+
+# --- Others ---
+x-scheme-handler/discord=discord.desktop

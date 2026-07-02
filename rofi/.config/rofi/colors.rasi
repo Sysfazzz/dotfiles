@@ -1,0 +1,12 @@
+* {
+    background: #1a1111;
+    on-background: #f0dedd;
+    primary: #ffb3b2;
+    on-primary: #561d20;
+    secondary: #e6bdbc;
+    on-secondary: #442929;
+    tertiary: #e4c18d;
+    on-tertiary: #422c05;
+    error: #ffb4ab;
+    on-error: #690005;
+}

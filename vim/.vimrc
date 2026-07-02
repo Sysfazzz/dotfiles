@@ -1,0 +1,13 @@
+syntax on
+set number
+set relativenumber
+set mouse=a
+set hlsearch
+set ignorecase
+set smartcase
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set showmatch
