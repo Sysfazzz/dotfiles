@@ -14,7 +14,6 @@
         "tray"
     ],
     "modules-right": [
-        "network#htb",
         "power-profiles-daemon",
         "group/hardware",
         "custom/power"
