@@ -1,0 +1,4 @@
+python-pywalfox
+sublime-text-4
+yay
+yay-debug
