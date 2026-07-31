@@ -121,6 +121,7 @@
         "format": "󰂯",
         "format-disabled": "󰂲",
         "format-connected": "󰂱 {num_connections}",
+        "on-click-right": "blueman-manager",
         "tooltip": false
     },
     // -------- network --------
