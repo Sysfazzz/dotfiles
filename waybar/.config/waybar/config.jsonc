@@ -14,7 +14,6 @@
         "tray"
     ],
     "modules-right": [
-        "power-profiles-daemon",
         "group/hardware",
         "custom/power"
     ],
@@ -79,6 +78,41 @@
         "format-disconnected": "󰆧 HTB Disconnected",
         "tooltip": false
     },
+    // -------- all hardwares --------
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "network#speed",
+            "cpu",
+            "memory",
+            "power-profiles-daemon",
+            "pulseaudio",
+            "bluetooth",
+            "group/networks",
+            "group/charge"
+        ]
+    },
+    // -------- internet speed --------
+    "network#speed": {
+        "interface": "wlp1s0",
+        "format": "󰇚 {bandwidthDownBytes} 󰕒 {bandwidthUpBytes}",
+        "interval": 1,
+        "tooltip": false
+    },
+    // -------- cpu --------
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}%",
+        "on-click-right": "kitty -e btop",
+        "tooltip": false
+    },
+    // -------- memory --------
+    "memory": {
+        "interval": 1,
+        "format": " {used:0.1f}G/{total:0.0f}G",
+        "on-click-right": "kitty -e btop",
+        "tooltip": false
+    },
     // -------- power profile --------
     "power-profiles-daemon": {
         "format": "{icon}",
@@ -89,16 +123,6 @@
             "power-saver": ""
         },
         "tooltip": false
-    },
-    // -------- all hardwares --------
-    "group/hardware": {
-        "orientation": "horizontal",
-        "modules": [
-            "pulseaudio",
-            "bluetooth",
-            "group/networks",
-            "group/charge"
-        ]
     },
     // -------- audio --------
     "pulseaudio": {
@@ -149,6 +173,7 @@
             "󰤥",
             "󰤨"
         ],
+        "interval": 1,
         "on-click": "~/.config/hypr/scripts/wifi.sh",
         "on-click-right": "nm-connection-editor",
         "tooltip": false
@@ -199,10 +224,10 @@
         "format": "{capacity}%",
         "tooltip": false
     },
-    // -------- battery --------
+    // -------- power --------
     "custom/power": {
     "format": "",
     "on-click": "~/.config/hypr/scripts/power.sh",
     "tooltip": false
-}
+    }
 }

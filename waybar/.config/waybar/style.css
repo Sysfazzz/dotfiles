@@ -54,7 +54,7 @@ tooltip {
 #mpris,
 #tray,
 #network.htb,
-#power-profiles-daemon,
+#network.speed,
 #hardware,
 #custom-power {
     color: @primary;
@@ -81,6 +81,10 @@ tooltip {
     margin: 0 0 0 20px;
 }
 
+#network.speed {
+    margin: 0 20px 0 0;
+}
+
 #network.htb {
     color: @tertiary;
     margin: 0 20px 0 0;
@@ -90,8 +94,15 @@ tooltip {
     color: @error;
 }
 
+#cpu {
+    margin: 0 20px 0 0;
+}
+
+#memory {
+    margin: 0 20px 0 0;
+}
+
 #power-profiles-daemon {
-    color: @secondary;
     margin: 0 20px 0 0;
 }
 
