@@ -1,4 +1,11 @@
+gale-bin
+heroic-games-launcher-bin
+mangojuice-bin
+onlinefix-linux-launcher-bin
+onlyoffice-bin
 python-pywalfox
+rpi-imager-git
+smem
 sublime-text-4
 yay
 yay-debug
